@@ -11,7 +11,7 @@ jobs:
    
     - name: SSH Login
       run: |
-        sshpass -p $staging_pass ssh -t -t stagebo@18.203.21.215
+        sshpass -p fsdfdsfdsf -t -t stagebo@18.203.21.215
         ls -la
       env:
         staging_pass: ${{ secrets.STAGING_PASS }}   
