@@ -10,7 +10,7 @@ jobs:
     steps:
    
     - name: SSH Login
-      run: sshpass -p $staging_pass ssh stagebo@18.203.21.215
+      run: sshpass -p $staging_pass ssh -t stagebo@18.203.21.215
       env:
         staging_pass: ${{ secrets.STAGING_PASS }}   
 
