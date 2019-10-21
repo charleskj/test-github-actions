@@ -9,6 +9,6 @@ jobs:
 
     steps:
    
-    - name: Install sshpass
-      run: sudo apt-get install sshpass
+    - name: SSH Login
+      run: sshpass -p ${{ secrets.STAGING_PASS }} ssh stagebo@18.203.21.215
 
