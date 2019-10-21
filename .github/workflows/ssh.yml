@@ -1,0 +1,14 @@
+name: SSH Login 
+
+on: [push]
+
+jobs:
+  ssh:
+
+    runs-on: ubuntu-latest
+
+    steps:
+   
+    - name: Install sshpass
+      run: apt-get install sshpass
+
